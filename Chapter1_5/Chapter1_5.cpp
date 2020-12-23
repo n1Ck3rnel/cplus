@@ -5,11 +5,9 @@ using namespace std;
 
 int main()
 {
-	int i = -1;
-	char a = 'H';
-
-	cout << (int*)&a << endl;
-	cout << (int*)(&i) << endl;
+	int a = 123;    // copy initialization
+	int b(123);		// direct initialization
+	int c{ 123 };  // uniform initialization
 
 	return 0;
 }
